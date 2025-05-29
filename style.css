@@ -1,6 +1,6 @@
 body {
     font-family: Consolas, monospace;
-    background: url("background.jpg") no-repeat center center fixed;
+    background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     background-color: #0f0f0f;
@@ -9,7 +9,7 @@ body {
 
 body::before {
     content: "";
-    background: url(images/background.jpg) no-repeat center center fixed;
+    background: url(background.jpg) no-repeat center center fixed;
     background-size: fixed;
     top: 0;
     left: 0;
