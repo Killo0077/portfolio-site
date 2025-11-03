@@ -1,15 +1,20 @@
 body {
     font-family: Consolas, monospace;
-    background-image: url('background.jpg');
+    background-image:none; /*url('background_refresh');*/
     background-size: cover;
     background-attachment: fixed;
-    background-color: #0f0f0f;
-    color: #f0f0f0;
+    background-color: #f7f7f8;
+    color: #1b1b1f;
+    line-height: 1.6;
+}
+
+.about-text p {
+  margin-bottom: 1.2rem;
 }
 
 body::before {
     content: "";
-    background-image: url('background.jpg');
+    background-image: url('background_refresh');
     background-size: fixed;
     top: 0;
     left: 0;
@@ -26,51 +31,47 @@ body::before {
 }
 
 header {
-    background-color: #282c34;
+    background-color: #ffffff;
     text-align: center;
     padding: 2rem;
-    border-bottom: 4px solid #00ff90;
+    border-bottom: 2px solid #e5e7eb;
 }
 
-@media (max-width: 600px) {
-    .overlay {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 1rem;
-    }
-
-    .project-card {
-        font-size: 0.95rem;
-    }
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0c0f; color: #e5e7eb; }
+  header { background: #111318; border-color: #262a32; }
+  section { background: #111318; border-color: #262a32; }
 }
+
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    color: #00ff90;
-    text-shadow: 0 0 5px #00ff90, 0 0 10px #00ff90;
+    color: #0f766e;
+    text-shadow: none;
 }
 
 header p {
     margin-top: 0.5rem;
-    color: #ccc;
+    color: #6b7280;
 }
 
 section {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 2px rgba(241, 237, 237, 0.863);
 }
 
 h2 {
-    border-bottom: 2px solid #444;
+    color: var(--accent);
+    border-bottom: 2px solid var(--border);
     padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    color: #00ff90;
-    text-shadow: 0 0 5px #00ff90, 0 0 10px #00ff90;
 }
+
 
 .project-card {
     background: rgba(50, 50, 50, 0.8);
