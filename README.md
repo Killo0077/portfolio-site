@@ -1,7 +1,7 @@
 # Pablo Baena — Developer Portfolio 🌐
 
 This is my personal portfolio website, built to showcase my learning journey and projects as a **Software Development student**.  
-The design is based on the open-source [Dopefolio](https://github.com/rammcodes/Dopefolio) template by **Ram Maheshwari**, which I customized to fit my academic and technical profile.
+The design is based on the open-source [Portfolio]([https://github.com/rammcodes/Dopefolio](https://killo0077.github.io/portfolio-site/)) template by **Ram Maheshwari**, which I customized to fit my academic and technical profile.
 
 ---
 
