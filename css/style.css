@@ -13,8 +13,8 @@ Image sizing notes:
   different sizes or proportions.
 - object-fit: cover keeps the layout clean and fills
   the space nicely.
-- If a diagram/image gets cropped too much, change
-  object-fit: cover; to object-fit: contain;
+- If a diagram/image gets cropped too much, use the
+  helper class: .projects__row-img--contain
 ====================================================
 */
 
@@ -26,10 +26,7 @@ Image sizing notes:
   align-items: center;
 }
 
-/*
-Tablet / mobile layout:
-Stack image and text vertically
-*/
+/* Tablet / mobile layout */
 @media only screen and (max-width: 56.25em) {
   .projects__row {
     grid-template-columns: 1fr;
@@ -45,30 +42,27 @@ Stack image and text vertically
 
 /*
 Image container:
-- fixed height keeps all project images visually even
-- max-width stops images from becoming too huge
-- overflow hidden prevents oversized images from breaking layout
-- background adds a clean fallback behind transparent/small images
+- fixed size for consistent project card layout
+- overflow hidden prevents layout break
+- background helps when using contain
 */
 .projects__row-img-cont {
   width: 100%;
-  max-width: 60rem;
-  height: 34rem;
+  max-width: 55rem;
+  height: 32rem;
   overflow: hidden;
   border-radius: 8px;
+  background: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f2f2f2;
   margin: 0 auto;
 }
 
 /*
-Project image:
-- width + height fill the image box
-- cover keeps the card neat and consistent
-- if you want to see the full architecture diagram without cropping,
-  change object-fit from cover to contain
+Default project image behavior:
+- fills the box
+- looks clean for normal screenshots/photos
 */
 .projects__row-img {
   width: 100%;
@@ -79,8 +73,17 @@ Project image:
 }
 
 /*
-Text content area
+Use this for images that should not be cropped
+Examples:
+- architecture diagrams
+- technical screenshots
+- ESP32 photo if cover looks too zoomed
 */
+.projects__row-img--contain {
+  object-fit: contain;
+  padding: 1rem;
+}
+
 .projects__row-content {
   padding: 2rem 0;
   display: flex;
@@ -120,22 +123,4 @@ Text content area
   .projects__row-content-desc {
     font-size: 1.7rem;
   }
-}
-
-/*
-Optional:
-If one image looks too cropped, you can create a special class
-in the HTML for that image only.
-
-Example in HTML:
-<img src="./assets/jpeg/cyber_Security_Events.png"
-     alt="Cyber Incident Explorer architecture"
-     class="projects__row-img projects__row-img--contain"
-     loading="lazy" />
-
-Then keep this helper class below enabled.
-*/
-.projects__row-img--contain {
-  object-fit: contain;
-  padding: 1rem;
 }
