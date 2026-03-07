@@ -1,92 +1,372 @@
-<section id="projects" class="projects sec-pad">
-  <div class="main-container">
-    <h2 class="heading heading-sec heading-sec__mb-bg">
-      <span class="heading-sec__main">Projects</span>
-      <span class="heading-sec__sub">
-        Here are some of the projects I’ve built recently — from practical web applications
-        to full-stack experiments. Each one reflects my growth as a developer and my interest
-        in clean, efficient design and real-world problem solving.
-      </span>
-    </h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Killo0077</title>
+    <meta name="description" content="Software Development student focused on Python, Linux, APIs, and cybersecurity fundamentals. Selected projects and contact." />
+    <meta property="og:title" content="Pablo Baena • Developer Portfolio" />
+<meta property="og:description" content="Python & Linux learner. Backend, APIs, cybersecurity fundamentals. Selected projects and contact." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://killo0077.github.io/portfolio-site/" />
+<meta property="og:image" content="https://killo0077.github.io/portfolio-site/assets/jpeg/retrogame-site.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <div class="projects__content">
-
-      <!-- Peluqueria Lili -->
-      <div class="projects__row">
-        <div class="projects__row-img-cont">
-          <img src="./assets/jpeg/Lili.png" alt="Peluqueria Lili website screenshot" class="projects__row-img"
-            loading="lazy" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/killo0077.png"
+              alt=""
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Pablo Baena</span>
         </div>
-
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">Peluqueria Lili Website</h3>
-
-          <p class="projects__row-content-desc">
-            A responsive website developed for a local hair salon to present services,
-            contact information, and client details. Built using semantic HTML, CSS,
-            and JavaScript. This project strengthened my understanding of web structure,
-            layout design, and accessibility best practices.
-          </p>
-
-          <a href="https://github.com/Killo0077/peluqueria-lili" class="btn btn--med btn--theme dynamicBgClr"
-            target="_blank">
-            View Project
-          </a>
-        </div>
-      </div>
-
-
-      <!-- ESP32 Weather Station -->
-      <div class="projects__row">
-        <div class="projects__row-img-cont">
-          <img src="./assets/jpeg/IMG_1273.jpeg" alt="ESP32 Weather Station project"
-            class="projects__row-img projects__row-img--contain" loading="lazy" />
-        </div>
-
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">ESP32 Weather Station</h3>
-
-          <p class="projects__row-content-desc">
-            DIY IoT weather station built with an ESP32 microcontroller, a DHT22
-            temperature and humidity sensor, and a 2.8" TFT display. The system
-            shows environmental data, real-time clock synchronization over WiFi,
-            and live RSS news feeds. Navigation is handled through hardware
-            buttons and a custom menu interface.
-          </p>
-
-          <a href="https://github.com/Killo0077/esp32-weather-station" class="btn btn--med btn--theme dynamicBgClr"
-            target="_blank">
-            View Project
-          </a>
-        </div>
-      </div>
-
-
-      <!-- Cyber Incident Explorer -->
-      <div class="projects__row">
-        <div class="projects__row-img-cont">
-          <img src="./assets/jpeg/cyber_Security_Events.png" alt="Cyber Incident Explorer architecture"
-            class="projects__row-img contain-img" loading="lazy" />
-        </div>
-
-        <div class="projects__row-content">
-          <h3 class="projects__row-content-title">Cyber Incident Explorer</h3>
-
-          <p class="projects__row-content-desc">
-            Full-stack collaborative project developed using Agile practices to
-            analyze global cyber security incidents. Built with React (Vite),
-            a Flask API, SQL databases, and an AI analysis engine. The platform
-            integrates APIs, data pipelines, and an interactive interface to
-            explore cyber incident data and generate AI-assisted insights.
-          </p>
-
-          <a href="https://github.com/gabriel-zomignani/cyber-incidents-explorer"
-            class="btn btn--med btn--theme dynamicBgClr" target="_blank">
-            View Project
-          </a>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
         </div>
       </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
 
-    </div>
-  </div>
-</section>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, My name is Pablo Baena</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Software Development Student - Career Changer - Python Enthusiast
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/pablo-baena-a3b543a2/" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/Killo0077" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        
+        
+        
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+         I'm currently studying Software Developer and transitioning from a backgroud in manufacturing and instrumentation. I enjoy
+         creating simple practical tools that make everyday tasks easier. Passionate about learning modern technologies, improving my skills
+         in Python and Linux and solving real-world problems through code.
+         
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It’s <strong>Pablo Baena</strong> and I’m currently pursuing a <strong>Bachelor’s degree in Software Development</strong> while transitioning from a strong background in manufacturing and instrumentation.  
+  My technical experience has given me an appreciation for precision, systems thinking, and continuous improvement—values I now apply to software engineering.
+
+
+  I’m passionate about learning <strong>Python, Linux, and cybersecurity fundamentals</strong>, and about developing reliable, practical tools that solve real-world problems.  
+  My current focus is on backend development, APIs, and the intersection between software and system administration.
+</p>
+
+              <p class="about__content-details-para">
+               
+  Beyond my studies, I enjoy exploring open-source projects, experimenting with Linux environments, and studying network and system security.  
+  I’m always open to collaborating on new ideas and learning from other developers.
+</p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">REST APIs</div>
+              <div class="skills__skill">Linux</div>
+              <div class="skills__skill">VS Code & CLI tools</div>
+              <div class="skills__skill">Networking & cybersecurity fundamentals</div>
+              <div class="skills__skill">FastAPI</div>
+              <div class="skills__skill">C++</div>
+              <div class="skills__skill">Agile Process</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            <p>
+  Here are some of the projects I’ve built recently — from simple web apps to complete full-stack experiments.
+  Each one reflects my growth as a developer and my interest in clean, efficient design.
+</p>
+
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/Lili.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Peluqueria Lili Website</h3>
+              <p class="projects__row-content-desc">
+               A responsive website created for a local hair salon to showcase services, contact details, and client information.  
+      Developed using semantic HTML, CSS, and basic JavaScript for interactivity.  
+      This project strengthened my understanding of web structure, layout design, and accessibility best practices.
+              </p>
+              <a
+                href="https://github.com/Killo0077/peluqueria-lili"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/retro.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Retro Gaming Website</h3>
+              <p class="projects__row-content-desc">
+                A multi-page HTML/CSS website for a fictional retro-gaming community. 
+      Built with semantic HTML, responsive layout (Flexbox/Grid), and accessible navigation.
+      Focused on clean structure, reusable components, and deployment via GitHub Pages.
+              </p>
+              <a
+                href="https://github.com/Killo0077/retrogame-site"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/Untitled.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">To-Do List</h3>
+              <p class="projects__row-content-desc">
+                 A simple, responsive task manager built to practice front-end structure and basic state handling.
+      Implements add/complete/delete actions and persists tasks in localStorage. Developed using iterative
+      improvements (small sprints, quick feedback).
+              </p>
+              <a
+                href="https://github.com/Killo0077/To-Do-List-App"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+          I’m always open to discussing projects, learning opportunities, or collaborations related to software development.  
+  Feel free to reach out if you’d like to connect or share ideas — I’ll be glad to reply.
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pablo-baena-a3b543a2/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Killo0077">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Pablo Baena</h4>
+            <p class="main-footer__short-desc">
+         Software Development Student • Python &amp; Linux Enthusiast • 
+    Focused on backend development, APIs, and cybersecurity fundamentals.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+  &copy; 2025 Pablo Baena. Built with ❤️ using 
+  <a rel="noreferrer" target="_blank" href="https://github.com/rammcodes/Dopefolio">
+    Dopefolio
+  </a>
+  by Ram Maheshwari.
+</div>
+
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
