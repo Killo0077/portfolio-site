@@ -26,6 +26,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 @media only screen and (max-width: 75em) {
   html {
     font-size: 59%;
@@ -52,6 +54,78 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ====================================================
+   DARK MODE THEME
+==================================================== */
+
+body {
+  background: #0f1117;
+  color: #e2e8f0;
+}
+
+.about {
+  background: #161b27;
+}
+
+.projects {
+  background: #0f1117;
+}
+
+.about__content-title,
+.projects__row-content-title {
+  color: #e2e8f0;
+}
+
+.about__content-details-para,
+.projects__row-content-desc,
+.heading-sec__sub {
+  color: #94a3b8;
+}
+
+/* Header */
+.header {
+  background: #0f1117;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header__link,
+.header__logo-sub {
+  color: #e2e8f0;
+}
+
+.header__link:hover,
+.header__logo-container:hover {
+  color: #4fa3e0;
+}
+
+.header__sm-menu {
+  background: #161b27;
+}
+
+.header__sm-menu-link a {
+  color: #e2e8f0;
+  border-color: #2d3748;
+}
+
+.header__sm-menu-link a:hover {
+  color: #4fa3e0;
+}
+
+/* Skills base tag */
+.skills__skill {
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+}
+
+/* Footer */
+.main-footer {
+  background: #080b11;
+}
+
+.main-footer__lower {
+  border-top-color: #1e2535;
 }
 
 a {
@@ -215,7 +289,7 @@ textarea {
 }
 
 .btn--theme-inv {
-  color: #0062b9;
+  color: #192025;
   background: #fff;
   border: 2px solid #0062b9;
   box-shadow: none;
@@ -483,7 +557,7 @@ Dark overlay keeps text readable
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(7, 112, 51, 0.8), rgba(33, 194, 19, 0.8));
+  background: linear-gradient(to right, rgba(0, 62, 140, 0.92), rgba(0, 98, 185, 0.85));
   background-size: cover;
   background-position: center;
 }
@@ -981,6 +1055,9 @@ Dark overlay keeps text readable
   }
 }
 
+
+
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -995,6 +1072,26 @@ Dark overlay keeps text readable
   border-radius: 5px;
   font-weight: 600;
   color: #777;
+}
+
+.skills__skill--blue {
+  background: rgba(0, 98, 185, 0.12);
+  color: #0062b9;
+}
+
+.skills__skill--teal {
+  background: rgba(10, 143, 122, 0.12);
+  color: #0a8f7a;
+}
+
+.skills__skill--slate {
+  background: rgba(74, 85, 104, 0.12);
+  color: #4a5568;
+}
+
+.skills__skill--purple {
+  background: rgba(107, 90, 205, 0.12);
+  color: #6b5acd;
 }
 
 .mouse {
