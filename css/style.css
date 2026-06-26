@@ -56,77 +56,9 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* ====================================================
-   DARK MODE THEME
-==================================================== */
 
-body {
-  background: #0f1117;
-  color: #e2e8f0;
-}
 
-.about {
-  background: #161b27;
-}
 
-.projects {
-  background: #0f1117;
-}
-
-.about__content-title,
-.projects__row-content-title {
-  color: #e2e8f0;
-}
-
-.about__content-details-para,
-.projects__row-content-desc,
-.heading-sec__sub {
-  color: #94a3b8;
-}
-
-/* Header */
-.header {
-  background: #0f1117;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
-}
-
-.header__link,
-.header__logo-sub {
-  color: #e2e8f0;
-}
-
-.header__link:hover,
-.header__logo-container:hover {
-  color: #4fa3e0;
-}
-
-.header__sm-menu {
-  background: #161b27;
-}
-
-.header__sm-menu-link a {
-  color: #e2e8f0;
-  border-color: #2d3748;
-}
-
-.header__sm-menu-link a:hover {
-  color: #4fa3e0;
-}
-
-/* Skills base tag */
-.skills__skill {
-  background: rgba(255, 255, 255, 0.06);
-  color: #94a3b8;
-}
-
-/* Footer */
-.main-footer {
-  background: #080b11;
-}
-
-.main-footer__lower {
-  border-top-color: #1e2535;
-}
 
 a {
   text-decoration: none;
@@ -1130,4 +1062,76 @@ Dark overlay keeps text readable
     opacity: 0;
     top: 27px;
   }
+}
+
+/* ====================================================
+   DARK MODE THEME
+==================================================== */
+
+body {
+  background: #0f1117;
+  color: #e2e8f0;
+}
+
+.about {
+  background: #161b27;
+}
+
+.projects {
+  background: #0f1117;
+}
+
+.about__content-title,
+.projects__row-content-title {
+  color: #e2e8f0;
+}
+
+.about__content-details-para,
+.projects__row-content-desc,
+.heading-sec__sub {
+  color: #94a3b8;
+}
+
+/* Header */
+.header {
+  background: #0f1117;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header__link,
+.header__logo-sub {
+  color: #e2e8f0;
+}
+
+.header__link:hover,
+.header__logo-container:hover {
+  color: #4fa3e0;
+}
+
+.header__sm-menu {
+  background: #161b27;
+}
+
+.header__sm-menu-link a {
+  color: #e2e8f0;
+  border-color: #2d3748;
+}
+
+.header__sm-menu-link a:hover {
+  color: #4fa3e0;
+}
+
+/* Skills base tag */
+.skills__skill {
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+}
+
+/* Footer */
+.main-footer {
+  background: #080b11;
+}
+
+.main-footer__lower {
+  border-top-color: #1e2535;
 }
